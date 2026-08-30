@@ -1,0 +1,57 @@
+component,experiment,metric,measured,bar,verdict
+benchmarks,benchmarks_parity,bs_vs_quantlib_max_abs_diff,0.0,<= 1e-10,pass
+benchmarks,benchmarks_parity,bs_call,1.86809,-,info
+benchmarks,benchmarks_parity,black76_call,1.86809,-,info
+monte_carlo,mc_convergence,weak_order_euler,1.292764,"in [0.6, 1.5]",pass
+monte_carlo,mc_convergence,weak_order_milstein,1.434373,"in [0.6, 1.5]",pass
+monte_carlo,mc_convergence,strong_order_euler,0.472576,"in [0.35, 0.65]",pass
+monte_carlo,mc_convergence,strong_order_milstein,0.920357,"in [0.8, 1.2]",pass
+monte_carlo,mc_convergence,se_scaling_slope,-0.49556,"in [-0.6, -0.4]",pass
+monte_carlo,mc_variance_reduction,antithetic_variance_ratio,1.389089,> 1,pass
+monte_carlo,mc_variance_reduction,control_variate_variance_ratio,3.334914,> 1,pass
+monte_carlo,mc_variance_reduction,importance_sampling_variance_ratio,41.745671,> 1,pass
+monte_carlo,mc_variance_reduction,antithetic_unbiased,1.0,== 1 (within 4 SE),pass
+monte_carlo,mc_variance_reduction,control_variate_unbiased,1.0,== 1 (within 4 SE),pass
+monte_carlo,mc_variance_reduction,importance_sampling_unbiased,1.0,== 1 (within 4 SE),pass
+greeks,greeks_cross_method,bump_delta_rel_err,0.000694,<= 5% vs closed form,pass
+greeks,greeks_cross_method,bump_delta_within_tol,1.0,-,info
+greeks,greeks_cross_method,bump_vega_rel_err,0.001698,<= 15% vs closed form,pass
+greeks,greeks_cross_method,bump_vega_within_tol,1.0,-,info
+greeks,greeks_cross_method,pathwise_delta_rel_err,0.001114,<= 5% vs closed form,pass
+greeks,greeks_cross_method,pathwise_delta_within_tol,1.0,-,info
+greeks,greeks_cross_method,pathwise_vega_rel_err,0.001699,<= 15% vs closed form,pass
+greeks,greeks_cross_method,pathwise_vega_within_tol,1.0,-,info
+greeks,greeks_cross_method,likelihood_ratio_delta_rel_err,0.001698,<= 5% vs closed form,pass
+greeks,greeks_cross_method,likelihood_ratio_delta_within_tol,1.0,-,info
+greeks,greeks_cross_method,likelihood_ratio_vega_rel_err,0.004342,<= 15% vs closed form,pass
+greeks,greeks_cross_method,likelihood_ratio_vega_within_tol,1.0,-,info
+greeks,greeks_cross_method,optimal_bump_h,4.0,-,info
+greeks,greeks_cross_method,optimal_bump_rmse,0.006272,-,info
+pde,pde_convergence,spatial_order_vanilla_cn,2.621066,"in [1.8, 2.9]",pass
+pde,pde_convergence,temporal_order_crank_nicolson,2.158799,"in [1.7, 2.6]",pass
+pde,pde_convergence,temporal_order_implicit,0.982982,"in [0.7, 1.3]",pass
+pde,pde_convergence,spatial_order_digital,0.801881,recorded (kink degrades order),info
+pde,pde_convergence,spatial_order_barriers,1.630564,recorded (barrier discontinuity),info
+pde,pde_convergence,early_exercise_order_psor,1.961879,recorded (free-boundary kink),info
+pde,pde_convergence,grid_refinement_error_reduction,8.0,-,info
+pde,pde_convergence,barrier_reference_price,2.819688,-,info
+anchor,anchor_pricing,bermudan_lsm_price,0.105548,-,info
+anchor,anchor_pricing,bermudan_lsm_std_error,0.0001,-,info
+anchor,anchor_pricing,bermudan_pde_price,0.10578,-,info
+anchor,anchor_pricing,bermudan_lsm_vs_pde_rel_diff,0.00219,<= 2% engine agreement,pass
+anchor,anchor_pricing,european_lsm_price,0.024928,-,info
+anchor,anchor_pricing,european_jamshidian_price,0.024909,-,info
+anchor,anchor_pricing,european_lsm_vs_jamshidian_rel_diff,0.000778,<= 1% vs Jamshidian,pass
+anchor,anchor_pla,pla_spearman,1.0,>= 0.80 FRTB bar,pass
+anchor,anchor_pla,pla_ks_statistic,0.075,< 0.09 FRTB bar,pass
+anchor,anchor_pla,n_scenarios,40.0,-,info
+calibration,calibration_synthetic,sabr_alpha_rel_err,0.0,<= 2e-2 recovery,pass
+calibration,calibration_synthetic,sabr_rho_abs_err,0.0,<= 2e-2 recovery,pass
+calibration,calibration_synthetic,sabr_nu_rel_err,0.0,<= 2e-2 recovery,pass
+calibration,calibration_synthetic,sabr_rmse_vol_pts,0.0,-,info
+calibration,calibration_synthetic,heston_iv_rmse,0.0,<= 1e-6 on synthetic surface,pass
+calibration,calibration_synthetic,heston_rho_abs_err,0.0,-,info
+calibration,calibration_synthetic,heston_feller_flagged,1.0,-,info
+calibration,calibration_snapshot,processed_checksums_ok,1.0,== 1 (all artifacts verified),pass
+calibration,calibration_snapshot,sabr_mean_fit_rmse_vol_pts,0.014371,-,info
+calibration,calibration_snapshot,heston_iv_rmse_snapshot,0.019367,-,info
