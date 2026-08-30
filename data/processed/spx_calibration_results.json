@@ -1,0 +1,71 @@
+{
+  "as_of": "2026-08-24",
+  "source": {
+    "dataset": "SPX_snapshot",
+    "provider": "yfinance (Yahoo Finance) Ticker('^SPX')",
+    "raw_sha256": "0e6963f9a161746f70a65a5be0eafb70b5f230c1c206da3d05de0057b1be7ba6",
+    "processed_slices_sha256": "10a16bec987fa6799634e9ae84789f9f7ac6824e1cdf9113f1f61e31d7bdc3f1",
+    "filter_cuts": {
+      "max_rel_spread": 0.1,
+      "min_liquidity_max_volume_oi": 5,
+      "moneyness_band": [
+        0.8,
+        1.2
+      ],
+      "iv_bounds": [
+        0.03,
+        3.0
+      ],
+      "target_tenors_days": {
+        "30d": 30,
+        "90d": 90,
+        "1y": 365
+      },
+      "max_quotes_per_slice_for_heston": 12
+    }
+  },
+  "sabr_by_expiry": {
+    "2026-09-21": {
+      "alpha": 0.11848163676596993,
+      "beta": 1.0,
+      "rho": -0.46584221457813285,
+      "nu": 3.157988266970054,
+      "atm_vol": 0.13830540525881704,
+      "rmse": 0.008098574030865622,
+      "converged": true,
+      "n_quotes": 76
+    },
+    "2026-11-20": {
+      "alpha": 0.12921787593807876,
+      "beta": 1.0,
+      "rho": -0.3437332855139741,
+      "nu": 1.947563021336299,
+      "atm_vol": 0.11735830858353387,
+      "rmse": 0.012376506358561395,
+      "converged": true,
+      "n_quotes": 169
+    },
+    "2027-08-20": {
+      "alpha": 0.14398584735214756,
+      "beta": 1.0,
+      "rho": 0.1471514880270453,
+      "nu": 1.1901668649810058,
+      "atm_vol": 0.10865175108151186,
+      "rmse": 0.022636950767371284,
+      "converged": true,
+      "n_quotes": 61
+    }
+  },
+  "heston": {
+    "v0": 0.014768515817097129,
+    "kappa": 15.735794887266731,
+    "theta": 0.03440096226927456,
+    "xi": 2.107753286365778,
+    "rho": -0.4793570641817233,
+    "price_rmse": 45.54616759719119,
+    "iv_rmse": 0.019366928261739084,
+    "feller_violation": -3.359970943797925,
+    "converged": true,
+    "n_quotes": 36
+  }
+}
