@@ -1,0 +1,177 @@
+{
+  "created_utc": "2026-08-24T08:53:33+00:00",
+  "as_of": "2026-08-24",
+  "datasets": [
+    {
+      "name": "SPY_options",
+      "description": "SPY options chain, 2008-2025, 24M rows (multi-date backtest source)",
+      "source": "https://github.com/lambdaclass/options_portfolio_backtester/releases/download/data-v1/SPY_options.parquet",
+      "source_release": "lambdaclass/options_portfolio_backtester data-v1 (mirror of philippdubach/options-data, MIT)",
+      "path": "data/raw/options/SPY_options.parquet",
+      "sha256": "a7152991b45b81f090f970e945bf88def8093b8ecb9b250e9891cb6d88041f0a",
+      "bytes": 631738559
+    },
+    {
+      "name": "SPY_underlying",
+      "description": "SPY underlying prices, 1999-2025 (fixes the empty underlying.parquet bug in the original dataset)",
+      "source": "https://github.com/lambdaclass/options_portfolio_backtester/releases/download/data-v1/SPY_underlying.parquet",
+      "source_release": "lambdaclass/options_portfolio_backtester data-v1 (mirror of philippdubach/options-data, MIT)",
+      "path": "data/raw/options/SPY_underlying.parquet",
+      "sha256": "847e60a441eb10969d87cd4a6da604257b782d9076168f68d5730b84096c79db",
+      "bytes": 252066
+    },
+    {
+      "name": "SOFR",
+      "description": "Secured Overnight Financing Rate (overnight)",
+      "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SOFR",
+      "source_release": "FRED (St. Louis Fed), full history, keyless fredgraph.csv",
+      "path": "data/raw/rates/SOFR.csv",
+      "sha256": "0fc4703989a5b8f0818fc87d748e8090801544607e8e04f4d20f73f7f3c86b56",
+      "bytes": 34654
+    },
+    {
+      "name": "DGS1MO",
+      "description": "Treasury constant maturity 1 month",
+      "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS1MO",
+      "source_release": "FRED (St. Louis Fed), full history, keyless fredgraph.csv",
+      "path": "data/raw/rates/DGS1MO.csv",
+      "sha256": "f624103ce5afac17816a7e2f6f8865d0c6cd5d678ccf52ff5a973717e86a496f",
+      "bytes": 103544
+    },
+    {
+      "name": "DGS3MO",
+      "description": "Treasury constant maturity 3 month",
+      "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS3MO",
+      "source_release": "FRED (St. Louis Fed), full history, keyless fredgraph.csv",
+      "path": "data/raw/rates/DGS3MO.csv",
+      "sha256": "b4319130f24c555f5ea8fa887d342d3b66ad2c5976eb615bed37263586d67ec1",
+      "bytes": 186167
+    },
+    {
+      "name": "DGS6MO",
+      "description": "Treasury constant maturity 6 month",
+      "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS6MO",
+      "source_release": "FRED (St. Louis Fed), full history, keyless fredgraph.csv",
+      "path": "data/raw/rates/DGS6MO.csv",
+      "sha256": "827f84581049c92f7d706fef6677c27146623e87eb5a760edad0ce643132de8a",
+      "bytes": 186223
+    },
+    {
+      "name": "DGS1",
+      "description": "Treasury constant maturity 1 year",
+      "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS1",
+      "source_release": "FRED (St. Louis Fed), full history, keyless fredgraph.csv",
+      "path": "data/raw/rates/DGS1.csv",
+      "sha256": "eb58ce5a4e09c65c08fe9fed3fd8a2cf323d752873bf3763fe6a030c61dd452a",
+      "bytes": 268065
+    },
+    {
+      "name": "DGS2",
+      "description": "Treasury constant maturity 2 year",
+      "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS2",
+      "source_release": "FRED (St. Louis Fed), full history, keyless fredgraph.csv",
+      "path": "data/raw/rates/DGS2.csv",
+      "sha256": "2271b3ca1a306a4c8fdde0d752b73f71fe011341ab5921bee3cd304142c05dfd",
+      "bytes": 208616
+    },
+    {
+      "name": "DGS5",
+      "description": "Treasury constant maturity 5 year",
+      "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS5",
+      "source_release": "FRED (St. Louis Fed), full history, keyless fredgraph.csv",
+      "path": "data/raw/rates/DGS5.csv",
+      "sha256": "7bcff6ece6ee24d723b0f4f2002c1c067bec5f76a7e0040d54f755e365007c3d",
+      "bytes": 268269
+    },
+    {
+      "name": "DGS10",
+      "description": "Treasury constant maturity 10 year",
+      "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10",
+      "source_release": "FRED (St. Louis Fed), full history, keyless fredgraph.csv",
+      "path": "data/raw/rates/DGS10.csv",
+      "sha256": "c5f01c7537dc32054d8ff66ac9ca7d0360076578ede726494383f1d1ad586e39",
+      "bytes": 268443
+    },
+    {
+      "name": "DGS30",
+      "description": "Treasury constant maturity 30 year",
+      "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS30",
+      "source_release": "FRED (St. Louis Fed), full history, keyless fredgraph.csv",
+      "path": "data/raw/rates/DGS30.csv",
+      "sha256": "4f558440856adf23557b397d03a47e9a56ef281662a3e3743c7782c4789fb0ef",
+      "bytes": 206037
+    },
+    {
+      "name": "ESTR",
+      "description": "Euro short-term rate (ESTR), daily, 2019-10 onward",
+      "source": "https://data-api.ecb.europa.eu/service/data/EST/B.EU000A2X2A25.WT?format=csvdata",
+      "source_release": "ECB Data Portal (SDMX REST), keyless",
+      "path": "data/raw/rates/ESTR.csv",
+      "sha256": "94186969733a0a4e61eb1b28ddc5849ee2e419310f27d8f8c068f2c57ca150cb",
+      "bytes": 548033
+    },
+    {
+      "name": "STIBOR3M",
+      "description": "STIBOR 3 Months (SEK), 1987-01 to 2020-07 \u2014 series closed when STIBOR was replaced by SWESTR, which the public SWEA v1 API does not expose",
+      "source": "https://api.riksbank.se/swea/v1/Observations/SEDP3MSTIBORDELAYC/1987-01-01/2020-12-31",
+      "source_release": "Riksbank SWEA v1 API, keyless",
+      "path": "data/raw/rates/STIBOR3M.csv",
+      "sha256": "4ce1c41bf464511684cd7ec02a24c755f908c9fcd70570cdaeeaf1fa55c22092",
+      "bytes": 147614
+    },
+    {
+      "name": "SPX_snapshot",
+      "description": "SPX option chain snapshot (all expiries, current)",
+      "source": "yfinance (Yahoo Finance) Ticker('^SPX')",
+      "source_release": "yfinance 1.6.0",
+      "path": "data/raw/options/SPX_snapshot.csv",
+      "sha256": "0e6963f9a161746f70a65a5be0eafb70b5f230c1c206da3d05de0057b1be7ba6",
+      "bytes": 2747575
+    },
+    {
+      "name": "processed/spy_sabr_backtest",
+      "description": "Multi-date SPY SABR parameter trajectory + fit-quality table",
+      "source": "derived from SPY_options/SPY_underlying as-of 2025-12-01",
+      "source_release": "lambdaclass/options_portfolio_backtester data-v1 (mirror of philippdubach/options-data, MIT)",
+      "path": "data/processed/spy_sabr_backtest.csv",
+      "sha256": "9838cf876bdf8b898129129de5384acb8cb34faeda4ba56760c32ad2c65bf396",
+      "bytes": 14428
+    },
+    {
+      "name": "processed/spy_sabr_backtest_summary",
+      "description": "Stability summary (describe stats) over the SABR backtest table",
+      "source": "derived from SPY_options/SPY_underlying as-of 2025-12-01",
+      "source_release": "lambdaclass/options_portfolio_backtester data-v1 (mirror of philippdubach/options-data, MIT)",
+      "path": "data/processed/spy_sabr_backtest_summary.json",
+      "sha256": "a696749326f7b4fb859b057980873b5e91e742dcdf4e0be5c3e4c3053b210743",
+      "bytes": 819
+    },
+    {
+      "name": "processed/spx_calibration_slices",
+      "description": "Processed SPX calibration slices (committed, offline-reproducible)",
+      "source": "derived from SPX_snapshot as-of 2026-08-24",
+      "source_release": "yfinance 1.6.0",
+      "path": "data/processed/spx_calibration_slices.csv",
+      "sha256": "10a16bec987fa6799634e9ae84789f9f7ac6824e1cdf9113f1f61e31d7bdc3f1",
+      "bytes": 363269
+    },
+    {
+      "name": "processed/spx_calibration_results",
+      "description": "Fitted SABR/Heston parameters + provenance (committed)",
+      "source": "derived from SPX_snapshot as-of 2026-08-24",
+      "source_release": "yfinance 1.6.0",
+      "path": "data/processed/spx_calibration_results.json",
+      "sha256": "5bf9f878223097d18c9e58fb99a54466c05dc8c25e1a11b3d52650fae9a16798",
+      "bytes": 1841
+    },
+    {
+      "name": "processed/run_manifest",
+      "description": "Deterministic full-run manifest (env, checksums, metrics)",
+      "source": "pricing.validation.run_all",
+      "source_release": "repo",
+      "path": "data/processed/run_manifest.json",
+      "sha256": "d373cb5dfaf7e0b63a0541b5259b3270dbdb8a7876181cef5ab538d7d14dde9c",
+      "bytes": 5956
+    }
+  ]
+}

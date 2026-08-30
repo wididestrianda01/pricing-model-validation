@@ -1,0 +1,33 @@
+# Local working scratch space — never committed
+.scratch/
+
+# Raw market data — fetched to a gitignored location, never committed (ADR-0003)
+data/raw/
+
+# Interview brief — local-only planning artifact, never committed
+interview_brief/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+.ipynb_checkpoints/
+
+# Environment / tooling
+.env
+.uv/
+.idea/
+.vscode/
+*.log
